@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F5BC0701CC18A9500383D8C /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5BC06F1CC18A9500383D8C /* SearchTableViewController.m */; };
+		4F5BC0731CC1A2AD00383D8C /* WordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5BC0721CC1A2AD00383D8C /* WordCell.m */; };
+		4F5BC0761CC3232100383D8C /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5BC0751CC3232100383D8C /* NetworkClient.m */; };
+		4FAF5C231CC15ED2006FB06A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF5C221CC15ED2006FB06A /* main.m */; };
+		4FAF5C261CC15ED2006FB06A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF5C251CC15ED2006FB06A /* AppDelegate.m */; };
+		4FAF5C2C1CC15ED2006FB06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF5C2A1CC15ED2006FB06A /* Main.storyboard */; };
+		4FAF5C2E1CC15ED2006FB06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF5C2D1CC15ED2006FB06A /* Assets.xcassets */; };
+		4FAF5C311CC15ED2006FB06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF5C2F1CC15ED2006FB06A /* LaunchScreen.storyboard */; };
+		4FAF5C3C1CC15ED2006FB06A /* Acronym4MTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF5C3B1CC15ED2006FB06A /* Acronym4MTests.m */; };
+		4FAF5C471CC15ED2006FB06A /* Acronym4MUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF5C461CC15ED2006FB06A /* Acronym4MUITests.m */; };
+		4FB0F9321CC53C1E007FFF5E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0F9311CC53C1E007FFF5E /* Constants.m */; };
+		4FD3D6271CC4558C0091C32D /* WordDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3D6261CC4558C0091C32D /* WordDataModel.m */; };
+		DC96DAD8C24242F254C73960 /* libPods-Acronym4M.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 323DC22766E7B6CA79EA8FB3 /* libPods-Acronym4M.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FAF5C381CC15ED2006FB06A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FAF5C161CC15ED2006FB06A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FAF5C1D1CC15ED2006FB06A;
+			remoteInfo = Acronym4M;
+		};
+		4FAF5C431CC15ED2006FB06A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FAF5C161CC15ED2006FB06A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FAF5C1D1CC15ED2006FB06A;
+			remoteInfo = Acronym4M;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		323DC22766E7B6CA79EA8FB3 /* libPods-Acronym4M.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Acronym4M.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5BC06E1CC18A9500383D8C /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		4F5BC06F1CC18A9500383D8C /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		4F5BC0711CC1A2AD00383D8C /* WordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCell.h; sourceTree = "<group>"; };
+		4F5BC0721CC1A2AD00383D8C /* WordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordCell.m; sourceTree = "<group>"; };
+		4F5BC0741CC3232100383D8C /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		4F5BC0751CC3232100383D8C /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
+		4FAF5C1E1CC15ED2006FB06A /* Acronym4M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acronym4M.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAF5C221CC15ED2006FB06A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FAF5C241CC15ED2006FB06A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FAF5C251CC15ED2006FB06A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FAF5C2B1CC15ED2006FB06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FAF5C2D1CC15ED2006FB06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FAF5C301CC15ED2006FB06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FAF5C321CC15ED2006FB06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FAF5C371CC15ED2006FB06A /* Acronym4MTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Acronym4MTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAF5C3B1CC15ED2006FB06A /* Acronym4MTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acronym4MTests.m; sourceTree = "<group>"; };
+		4FAF5C3D1CC15ED2006FB06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FAF5C421CC15ED2006FB06A /* Acronym4MUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Acronym4MUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAF5C461CC15ED2006FB06A /* Acronym4MUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acronym4MUITests.m; sourceTree = "<group>"; };
+		4FAF5C481CC15ED2006FB06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB0F9301CC53C1E007FFF5E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4FB0F9311CC53C1E007FFF5E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4FD3D6251CC4558C0091C32D /* WordDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDataModel.h; sourceTree = "<group>"; };
+		4FD3D6261CC4558C0091C32D /* WordDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDataModel.m; sourceTree = "<group>"; };
+		7F1791BF761207FB27C9CCE4 /* Pods-Acronym4M.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronym4M.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acronym4M/Pods-Acronym4M.debug.xcconfig"; sourceTree = "<group>"; };
+		9EB22801E7D7306D8F12894D /* Pods-Acronym4M.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acronym4M.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acronym4M/Pods-Acronym4M.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FAF5C1B1CC15ED2006FB06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC96DAD8C24242F254C73960 /* libPods-Acronym4M.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAF5C341CC15ED2006FB06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAF5C3F1CC15ED2006FB06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FAF5C151CC15ED2006FB06A = {
+			isa = PBXGroup;
+			children = (
+				4FAF5C201CC15ED2006FB06A /* Acronym4M */,
+				4FAF5C3A1CC15ED2006FB06A /* Acronym4MTests */,
+				4FAF5C451CC15ED2006FB06A /* Acronym4MUITests */,
+				4FAF5C1F1CC15ED2006FB06A /* Products */,
+				8FCF02A68014400B598C385F /* Pods */,
+				C0ECFF3CFAE0AAD7A3FD823E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FAF5C1F1CC15ED2006FB06A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF5C1E1CC15ED2006FB06A /* Acronym4M.app */,
+				4FAF5C371CC15ED2006FB06A /* Acronym4MTests.xctest */,
+				4FAF5C421CC15ED2006FB06A /* Acronym4MUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FAF5C201CC15ED2006FB06A /* Acronym4M */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF5C241CC15ED2006FB06A /* AppDelegate.h */,
+				4FAF5C251CC15ED2006FB06A /* AppDelegate.m */,
+				4F5BC0741CC3232100383D8C /* NetworkClient.h */,
+				4F5BC0751CC3232100383D8C /* NetworkClient.m */,
+				4F5BC0711CC1A2AD00383D8C /* WordCell.h */,
+				4F5BC0721CC1A2AD00383D8C /* WordCell.m */,
+				4FD3D6251CC4558C0091C32D /* WordDataModel.h */,
+				4FD3D6261CC4558C0091C32D /* WordDataModel.m */,
+				4F5BC06E1CC18A9500383D8C /* SearchTableViewController.h */,
+				4F5BC06F1CC18A9500383D8C /* SearchTableViewController.m */,
+				4FB0F9301CC53C1E007FFF5E /* Constants.h */,
+				4FB0F9311CC53C1E007FFF5E /* Constants.m */,
+				4FAF5C2A1CC15ED2006FB06A /* Main.storyboard */,
+				4FAF5C2D1CC15ED2006FB06A /* Assets.xcassets */,
+				4FAF5C2F1CC15ED2006FB06A /* LaunchScreen.storyboard */,
+				4FAF5C321CC15ED2006FB06A /* Info.plist */,
+				4FAF5C211CC15ED2006FB06A /* Supporting Files */,
+			);
+			path = Acronym4M;
+			sourceTree = "<group>";
+		};
+		4FAF5C211CC15ED2006FB06A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF5C221CC15ED2006FB06A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FAF5C3A1CC15ED2006FB06A /* Acronym4MTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF5C3B1CC15ED2006FB06A /* Acronym4MTests.m */,
+				4FAF5C3D1CC15ED2006FB06A /* Info.plist */,
+			);
+			path = Acronym4MTests;
+			sourceTree = "<group>";
+		};
+		4FAF5C451CC15ED2006FB06A /* Acronym4MUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF5C461CC15ED2006FB06A /* Acronym4MUITests.m */,
+				4FAF5C481CC15ED2006FB06A /* Info.plist */,
+			);
+			path = Acronym4MUITests;
+			sourceTree = "<group>";
+		};
+		8FCF02A68014400B598C385F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F1791BF761207FB27C9CCE4 /* Pods-Acronym4M.debug.xcconfig */,
+				9EB22801E7D7306D8F12894D /* Pods-Acronym4M.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0ECFF3CFAE0AAD7A3FD823E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323DC22766E7B6CA79EA8FB3 /* libPods-Acronym4M.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FAF5C1D1CC15ED2006FB06A /* Acronym4M */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FAF5C4B1CC15ED2006FB06A /* Build configuration list for PBXNativeTarget "Acronym4M" */;
+			buildPhases = (
+				0E8E2D2A60196045CFCF6E27 /* Check Pods Manifest.lock */,
+				4FAF5C1A1CC15ED2006FB06A /* Sources */,
+				4FAF5C1B1CC15ED2006FB06A /* Frameworks */,
+				4FAF5C1C1CC15ED2006FB06A /* Resources */,
+				2035A6842C105C3AE06CF404 /* Embed Pods Frameworks */,
+				9CAF20FB45BF73F6BAB1492F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Acronym4M;
+			productName = Acronym4M;
+			productReference = 4FAF5C1E1CC15ED2006FB06A /* Acronym4M.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FAF5C361CC15ED2006FB06A /* Acronym4MTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FAF5C4E1CC15ED2006FB06A /* Build configuration list for PBXNativeTarget "Acronym4MTests" */;
+			buildPhases = (
+				4FAF5C331CC15ED2006FB06A /* Sources */,
+				4FAF5C341CC15ED2006FB06A /* Frameworks */,
+				4FAF5C351CC15ED2006FB06A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FAF5C391CC15ED2006FB06A /* PBXTargetDependency */,
+			);
+			name = Acronym4MTests;
+			productName = Acronym4MTests;
+			productReference = 4FAF5C371CC15ED2006FB06A /* Acronym4MTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FAF5C411CC15ED2006FB06A /* Acronym4MUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FAF5C511CC15ED2006FB06A /* Build configuration list for PBXNativeTarget "Acronym4MUITests" */;
+			buildPhases = (
+				4FAF5C3E1CC15ED2006FB06A /* Sources */,
+				4FAF5C3F1CC15ED2006FB06A /* Frameworks */,
+				4FAF5C401CC15ED2006FB06A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FAF5C441CC15ED2006FB06A /* PBXTargetDependency */,
+			);
+			name = Acronym4MUITests;
+			productName = Acronym4MUITests;
+			productReference = 4FAF5C421CC15ED2006FB06A /* Acronym4MUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FAF5C161CC15ED2006FB06A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Z Latte";
+				TargetAttributes = {
+					4FAF5C1D1CC15ED2006FB06A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					4FAF5C361CC15ED2006FB06A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 4FAF5C1D1CC15ED2006FB06A;
+					};
+					4FAF5C411CC15ED2006FB06A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 4FAF5C1D1CC15ED2006FB06A;
+					};
+				};
+			};
+			buildConfigurationList = 4FAF5C191CC15ED2006FB06A /* Build configuration list for PBXProject "Acronym4M" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FAF5C151CC15ED2006FB06A;
+			productRefGroup = 4FAF5C1F1CC15ED2006FB06A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FAF5C1D1CC15ED2006FB06A /* Acronym4M */,
+				4FAF5C361CC15ED2006FB06A /* Acronym4MTests */,
+				4FAF5C411CC15ED2006FB06A /* Acronym4MUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FAF5C1C1CC15ED2006FB06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAF5C311CC15ED2006FB06A /* LaunchScreen.storyboard in Resources */,
+				4FAF5C2E1CC15ED2006FB06A /* Assets.xcassets in Resources */,
+				4FAF5C2C1CC15ED2006FB06A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAF5C351CC15ED2006FB06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAF5C401CC15ED2006FB06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E8E2D2A60196045CFCF6E27 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2035A6842C105C3AE06CF404 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Acronym4M/Pods-Acronym4M-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAF20FB45BF73F6BAB1492F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Acronym4M/Pods-Acronym4M-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FAF5C1A1CC15ED2006FB06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5BC0761CC3232100383D8C /* NetworkClient.m in Sources */,
+				4FD3D6271CC4558C0091C32D /* WordDataModel.m in Sources */,
+				4FAF5C261CC15ED2006FB06A /* AppDelegate.m in Sources */,
+				4F5BC0731CC1A2AD00383D8C /* WordCell.m in Sources */,
+				4FAF5C231CC15ED2006FB06A /* main.m in Sources */,
+				4FB0F9321CC53C1E007FFF5E /* Constants.m in Sources */,
+				4F5BC0701CC18A9500383D8C /* SearchTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAF5C331CC15ED2006FB06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAF5C3C1CC15ED2006FB06A /* Acronym4MTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAF5C3E1CC15ED2006FB06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAF5C471CC15ED2006FB06A /* Acronym4MUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FAF5C391CC15ED2006FB06A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FAF5C1D1CC15ED2006FB06A /* Acronym4M */;
+			targetProxy = 4FAF5C381CC15ED2006FB06A /* PBXContainerItemProxy */;
+		};
+		4FAF5C441CC15ED2006FB06A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FAF5C1D1CC15ED2006FB06A /* Acronym4M */;
+			targetProxy = 4FAF5C431CC15ED2006FB06A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FAF5C2A1CC15ED2006FB06A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FAF5C2B1CC15ED2006FB06A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FAF5C2F1CC15ED2006FB06A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FAF5C301CC15ED2006FB06A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FAF5C491CC15ED2006FB06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FAF5C4A1CC15ED2006FB06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FAF5C4C1CC15ED2006FB06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1791BF761207FB27C9CCE4 /* Pods-Acronym4M.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Acronym4M/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.Acronym4M";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FAF5C4D1CC15ED2006FB06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB22801E7D7306D8F12894D /* Pods-Acronym4M.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Acronym4M/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.Acronym4M";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4FAF5C4F1CC15ED2006FB06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Acronym4MTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.Acronym4MTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acronym4M.app/Acronym4M";
+			};
+			name = Debug;
+		};
+		4FAF5C501CC15ED2006FB06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Acronym4MTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.Acronym4MTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acronym4M.app/Acronym4M";
+			};
+			name = Release;
+		};
+		4FAF5C521CC15ED2006FB06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Acronym4MUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.Acronym4MUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Acronym4M;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4FAF5C531CC15ED2006FB06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Acronym4MUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.Acronym4MUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Acronym4M;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FAF5C191CC15ED2006FB06A /* Build configuration list for PBXProject "Acronym4M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAF5C491CC15ED2006FB06A /* Debug */,
+				4FAF5C4A1CC15ED2006FB06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FAF5C4B1CC15ED2006FB06A /* Build configuration list for PBXNativeTarget "Acronym4M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAF5C4C1CC15ED2006FB06A /* Debug */,
+				4FAF5C4D1CC15ED2006FB06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FAF5C4E1CC15ED2006FB06A /* Build configuration list for PBXNativeTarget "Acronym4MTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAF5C4F1CC15ED2006FB06A /* Debug */,
+				4FAF5C501CC15ED2006FB06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FAF5C511CC15ED2006FB06A /* Build configuration list for PBXNativeTarget "Acronym4MUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAF5C521CC15ED2006FB06A /* Debug */,
+				4FAF5C531CC15ED2006FB06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FAF5C161CC15ED2006FB06A /* Project object */;
+}
